@@ -1,0 +1,20 @@
+{
+    "name": "vinhtieng-snippet",
+    "displayName": "VinhTieng Snippet",
+    "description": "Code faster",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "all",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}
