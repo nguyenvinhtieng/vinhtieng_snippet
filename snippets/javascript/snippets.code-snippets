@@ -1,0 +1,79 @@
+{
+  // ********************* DIRECTORY OF FILE *****************
+  "Directory of file ": {
+    "prefix": "directory",
+    "body": [
+      "$TM_DIRECTORY"
+    ],
+    "description": "Directory of file "
+  },
+  //*************************** REACT *************************
+  "React Function Component Export" : {
+    "prefix" : "rfc",
+    "body" : [
+      "function ${0:$TM_FILENAME_BASE} () {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t",
+      "\t\t</div>",
+      "\t);",
+      "}",
+      "",
+      "export default ${0:$TM_FILENAME_BASE};",
+      ""
+    ]
+  },
+  "React class component": {
+    "prefix": "rcc",
+    "body": [
+      "import React, { Component } from 'react'",
+      "export default class ${0:$TM_FILENAME_BASE} extends Component {",
+      "    render() {",
+      "        return (",
+      "            <div>",
+      "                ",
+      "            </div>",
+      "        )",
+      "    }",
+      "}"
+    ],
+    "description": "React class component"
+  },
+  //*************************** JAVASCRIPT *************************
+  "Get element by class name": {
+    "prefix": "get-class",
+    "body": [
+      "let ${0:$CLIPBOARD} = document.querySelector('.$CLIPBOARD')"
+    ],
+    "description": "Get element by class name"
+  },
+  "Get element by id ": {
+    "prefix": "get-id",
+    "body": [
+      "let ${0:$CLIPBOARD} = document.getElementById('.$CLIPBOARD')"
+    ],
+    "description": "Get element by id"
+  },
+  "Get element DOM from selector at line": {
+    "prefix": "select-dom",
+    "body": [
+      "let $1 = document.querySelector('$2')"
+    ],
+    "description": "Get element DOM from selector at line"
+  },
+  "Console log at current line": {
+    "prefix": "cslog",
+    "body": [
+      "console.log(`Print at line $TM_LINE_INDEX $0`)"
+    ],
+    "description": "Console log at current line"
+  },
+  "Console log with variable": {
+    "prefix": "cslog-v",
+    "body": [
+      "console.log(`\\${${0:$CLIPBOARD}\\}`)"
+    ],
+    "description": "Console log at current line"
+  },
+
+}

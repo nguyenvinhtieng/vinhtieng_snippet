@@ -3,6 +3,12 @@
     "displayName": "VinhTieng Snippet",
     "description": "Code faster",
     "version": "0.0.1",
+    "publisher": "Nguyễn Vinh Tiếng",
+    "repository":{
+        "type": "git",
+        "url": "https://github.com/vinhtieng/vinhtieng_snippet.git"
+    },
+    "icon": "logo.png",
     "engines": {
         "vscode": "^1.63.0"
     },
@@ -12,8 +18,16 @@
     "contributes": {
         "snippets": [
             {
-                "language": "all",
-                "path": "./snippets/snippets.code-snippets"
+                "language": "javascript",
+                "path": "./snippets/javascript/snippets.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/html/snippets.code-snippets"
+            },
+            {
+                "language": "css",
+                "path": "./snippets/css/snippets.code-snippets"
             }
         ]
     }
