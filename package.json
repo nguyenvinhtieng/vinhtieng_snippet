@@ -1,34 +1,40 @@
 {
-    "name": "vinhtieng-snippet",
-    "displayName": "VinhTieng Snippet",
-    "description": "Code faster",
-    "version": "0.0.1",
-    "publisher": "Nguyễn Vinh Tiếng",
-    "repository":{
-        "type": "git",
-        "url": "https://github.com/vinhtieng/vinhtieng_snippet.git"
-    },
-    "icon": "logo.png",
-    "engines": {
-        "vscode": "^1.63.0"
-    },
-    "categories": [
-        "Snippets"
-    ],
-    "contributes": {
-        "snippets": [
-            {
-                "language": "javascript",
-                "path": "./snippets/javascript/snippets.code-snippets"
-            },
-            {
-                "language": "html",
-                "path": "./snippets/html/snippets.code-snippets"
-            },
-            {
-                "language": "css",
-                "path": "./snippets/css/snippets.code-snippets"
-            }
-        ]
-    }
+	"name": "vinhtieng-snippet",
+	"displayName": "VinhTieng Snippet",
+	"description": "Code faster",
+	"version": "0.0.1",
+	"publisher": "NguyenVinhTieng",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/vinhtieng/vinhtieng_snippet.git"
+	},
+	"icon": "logo.png",
+	"engines": {
+		"vscode": "^1.63.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/javascript/snippets.code-snippets"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/html/snippets.code-snippets"
+			},
+			{
+				"language": "css",
+				"path": "./snippets/css/snippets.code-snippets"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "33de8968-4f3e-4662-871d-eb184eaa3dd3",
+		"publisherDisplayName": "Nguyễn Vinh Tiếng",
+		"publisherId": "e6420aa8-9975-4599-92aa-14945348586e",
+		"isPreReleaseVersion": false
+	}
 }

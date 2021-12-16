@@ -50,7 +50,7 @@
   "Get element by id ": {
     "prefix": "get-id",
     "body": [
-      "let ${0:$CLIPBOARD} = document.getElementById('.$CLIPBOARD')"
+      "let ${0:$CLIPBOARD} = document.getElementById('$CLIPBOARD')"
     ],
     "description": "Get element by id"
   },
@@ -64,7 +64,7 @@
   "Console log at current line": {
     "prefix": "cslog",
     "body": [
-      "console.log(`Print at line $TM_LINE_INDEX $0`)"
+      "console.log(`Print at line $TM_LINE_INDEX :   $0`)"
     ],
     "description": "Console log at current line"
   },
@@ -75,5 +75,14 @@
     ],
     "description": "Console log at current line"
   },
+  "Output HTML": {
+    "prefix": "tag",
+    "body": [
+        "<${h2}>Heading</${h2}>",
+        "<${p}>I wandered lonely as a cloud.</${p}>",
+        "$0"
+    ],
+    "description": "Outputs HTML."
+}
 
 }
